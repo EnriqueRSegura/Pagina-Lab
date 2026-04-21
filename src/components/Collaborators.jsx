@@ -7,7 +7,8 @@ const collaboratorsData = [
   { name: 'Dra. Eunice Farfán-García', institution: 'ENCB - IPN', field: 'Bioquímica Clínica' },
   { name: 'Dr. José Correa-Basurto', institution: 'ESM - IPN', field: 'Modelado Molecular' },
   { name: 'Dr. Roberto Osnaya-Brizuela', institution: 'UPIBI - IPN', field: 'Desarrollo de Fármacos' },
-  { name: 'Dra. Jessica Rubí Morán Díaz', institution: 'ESM - IPN', field: 'Microbiología y Farmacología', scholarLink: 'https://scholar.google.com/citations?user=PIfh2Y0AAAAJ&hl=es' }
+  { name: 'Dra. Jessica Rubí Morán Díaz', institution: 'ESM - IPN', field: 'Microbiología y Farmacología', scholarLink: 'https://scholar.google.com/citations?user=PIfh2Y0AAAAJ&hl=es' },
+  { name: 'Dr. Juan Alberto Guevara Salazar', institution: 'ESM - IPN', field: 'Diseño Racional de Fármacos', scholarLink: 'https://www.researchgate.net/profile/Juan-Guevara-Salazar' }
 ];
 
 const Collaborators = () => {
