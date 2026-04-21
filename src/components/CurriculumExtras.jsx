@@ -583,6 +583,25 @@ const CurriculumExtras = () => {
   }
 ];
 
+const patents = [
+  {
+    title: "SÍNTESIS DE UN DERIVADO DEL ÁCIDO 5-AMINOSALICÍLICO CON ACTIVIDAD ANTIOXIDANTE",
+    number: "376240",
+    date: "2020-10-07",
+    status: "OTORGADA",
+    summary: "DADA LA CRECIENTE APARICIÓN DE CONDICIONES PATÓLOGICAS DERIVADAS DE LOS DAÑOS POR AGENTES OXIDANTES AL ORGANISMO NOS DIMOS A LA TAREA DE REALIZAR LA SÍNTESIS DE UN DERIVADO DEL ÁCIDO 5-AMINOSALICÍLICO CON ACTIVIDAD ANTIOXIDANTE PARA COADYUVAR A SOLVENTAR ESTA PROBLEMÁTICA",
+    authors: "JOSÉ GUADALUPE TRUJILLO FERRARA, JESSICA ELENA MENDIETA WEJEBE, ITZIA IRENE PADILLA MARTÍNEZ, JOSÉ CORREA BASURTO, MARTHA CECILIA ROSALES HERNÁNDEZ, DIANA ALEMÁN GONZÁLEZ DUHART, LETICIA ARACELI RAMÍREZ DURÁN"
+  },
+  {
+    title: "DERIVADO DEL ÁCIDO VALPROICO CON POTENCIAL ACCIÓN ANTINEOPLÁSICA, INHIBIDOR DE LA HISTONA DESACETILASA",
+    number: "95618",
+    date: "2018-11-12",
+    status: "OTORGADA",
+    summary: "COMPUESTO ANTICANCEROSO DERIVADO DEL ÁCIDO VALPRÓICO MODULADOR DE HISTONA DESACETILAZA",
+    authors: "ITZIA IRENE PADILLA MARTÍNEZ, JOSÉ CORREA BASURTO, JOSÉ GUADALUPE TRUJILLO FERRARA, ISMAEL VÁZQUEZ MOCTEZUMA, JORGE ANTONIO BERMÚDEZ LUGO, OSCAR ALBERTO PÉREZ GONZÁLEZ"
+  }
+];
+
   return (
     <section id="extras" className="section container fade-in">
       <h2 className="section-title">{t('extras', 'title')}</h2>
@@ -613,8 +632,22 @@ const CurriculumExtras = () => {
           <h3 className="extra-heading">{t('extras', 'patents')}</h3>
           <p className="extra-desc">{t('extras', 'patentsDesc')}</p>
           <ul className="extra-list">
-            <li><strong>Patente Registrada:</strong> SÍNTESIS DE UN DERIVADO DEL ÁCIDO 5-AMINOSALICÍLICO CON ACTIVIDAD ANTIOXIDANTE</li>
-            <li><strong>Patente Registrada:</strong> DERIVADO DEL ÁCIDO VALPROICO CON POTENCIAL ACCIÓN ANTINEOPLÁSICA, INHIBIDOR DE LA HISTONA DESACETILASA (Solicitud: 95618, 2018)</li>
+            {patents.map((p, idx) => (
+              <li key={idx} style={{marginBottom: '1.5rem', paddingBottom: '1rem', borderBottom: '1px dashed var(--border-color)'}}>
+                <strong style={{color: 'var(--primary-color)'}}>{p.title}</strong>
+                <br/>
+                <span style={{fontSize: '0.85em', color: 'var(--text-color)', opacity: 0.9}}>
+                  <strong>Estado:</strong> {p.status} | <strong>Solicitud:</strong> {p.number} ({p.date})
+                </span>
+                <br/>
+                <span style={{fontSize: '0.85em', color: 'var(--text-color)', opacity: 0.8, fontStyle: 'italic', display: 'block', margin: '0.4rem 0'}}>
+                  "{p.summary}"
+                </span>
+                <span style={{fontSize: '0.8em', color: 'var(--text-color)', opacity: 0.7}}>
+                  <strong>Titulares:</strong> {p.authors}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
