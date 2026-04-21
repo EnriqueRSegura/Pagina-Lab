@@ -1,0 +1,57 @@
+.collaborators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.collab-card {
+  display: flex;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.collab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  border-color: var(--accent-color);
+}
+
+.collab-avatar {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.collab-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-color);
+}
+
+.collab-inst {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.collab-field {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}

@@ -1,0 +1,21 @@
+.biography-card {
+  padding: 4rem;
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  margin-top: 2rem;
+  border-left: 6px solid var(--accent-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.biography-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.biography-text {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: var(--text-color);
+  opacity: 0.9;
+}

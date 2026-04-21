@@ -1,0 +1,84 @@
+.extras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.extra-card {
+  background: var(--card-bg);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid var(--accent-color);
+}
+
+.extra-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.extra-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.extra-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.extra-desc {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.extra-list {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 15px; /* for scrollbar */
+}
+
+.extra-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.extra-list::-webkit-scrollbar-track {
+  background: var(--bg-color);
+  border-radius: 4px;
+}
+
+.extra-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.extra-list::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+.extra-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.extra-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.extra-list li:last-child {
+  border-bottom: none;
+}
