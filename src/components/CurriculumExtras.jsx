@@ -613,8 +613,8 @@ const CurriculumExtras = () => {
           <h3 className="extra-heading">{t('extras', 'patents')}</h3>
           <p className="extra-desc">{t('extras', 'patentsDesc')}</p>
           <ul className="extra-list">
-            <li>Patente 1: Compuesto inhibidor de la AChE</li>
-            <li>Patente 2: Tratamiento para modelos de Alzheimer</li>
+            <li><strong>Patente Registrada:</strong> SÍNTESIS DE UN DERIVADO DEL ÁCIDO 5-AMINOSALICÍLICO CON ACTIVIDAD ANTIOXIDANTE</li>
+            <li><strong>Patente Registrada:</strong> DERIVADO DEL ÁCIDO VALPROICO CON POTENCIAL ACCIÓN ANTINEOPLÁSICA, INHIBIDOR DE LA HISTONA DESACETILASA</li>
           </ul>
         </div>
       </div>
