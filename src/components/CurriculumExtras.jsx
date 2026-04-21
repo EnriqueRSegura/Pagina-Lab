@@ -614,7 +614,7 @@ const CurriculumExtras = () => {
           <p className="extra-desc">{t('extras', 'patentsDesc')}</p>
           <ul className="extra-list">
             <li><strong>Patente Registrada:</strong> SÍNTESIS DE UN DERIVADO DEL ÁCIDO 5-AMINOSALICÍLICO CON ACTIVIDAD ANTIOXIDANTE</li>
-            <li><strong>Patente Registrada:</strong> DERIVADO DEL ÁCIDO VALPROICO CON POTENCIAL ACCIÓN ANTINEOPLÁSICA, INHIBIDOR DE LA HISTONA DESACETILASA</li>
+            <li><strong>Patente Registrada:</strong> DERIVADO DEL ÁCIDO VALPROICO CON POTENCIAL ACCIÓN ANTINEOPLÁSICA, INHIBIDOR DE LA HISTONA DESACETILASA (Solicitud: 95618, 2018)</li>
           </ul>
         </div>
       </div>
