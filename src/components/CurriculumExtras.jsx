@@ -656,22 +656,26 @@ const patents = [
           <h3 className="extra-heading">{t('extras', 'patents')}</h3>
           <p className="extra-desc">{t('extras', 'patentsDesc')}</p>
           <ul className="extra-list">
-            {patents.map((p, idx) => (
+            {patents.map((p, idx) => {
+              const statusEn = p.status === "OTORGADA" ? "GRANTED" : "UNDER EXAMINATION";
+              const dateText = p.date === "No Especificada" ? (language === 'es' ? "No Especificada" : "Not Specified") : p.date;
+              return (
               <li key={idx} style={{marginBottom: '1.5rem', paddingBottom: '1rem', borderBottom: '1px dashed var(--border-color)'}}>
                 <strong style={{color: 'var(--primary-color)'}}>{p.title}</strong>
                 <br/>
                 <span style={{fontSize: '0.85em', color: 'var(--text-color)', opacity: 0.9}}>
-                  <strong>Estado:</strong> {p.status} | <strong>Solicitud:</strong> {p.number} ({p.date})
+                  <strong>{language === 'es' ? 'Estado' : 'Status'}:</strong> {language === 'es' ? p.status : statusEn} | <strong>{language === 'es' ? 'Solicitud' : 'Application'}:</strong> {p.number} ({dateText})
                 </span>
                 <br/>
                 <span style={{fontSize: '0.85em', color: 'var(--text-color)', opacity: 0.8, fontStyle: 'italic', display: 'block', margin: '0.4rem 0'}}>
                   "{p.summary}"
                 </span>
                 <span style={{fontSize: '0.8em', color: 'var(--text-color)', opacity: 0.7}}>
-                  <strong>Titulares:</strong> {p.authors}
+                  <strong>{language === 'es' ? 'Titulares' : 'Inventors'}:</strong> {p.authors}
                 </span>
               </li>
-            ))}
+              );
+            })}
           </ul>
         </div>
       </div>
