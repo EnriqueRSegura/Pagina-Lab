@@ -55,3 +55,8 @@
   font-size: 0.85rem;
   opacity: 0.7;
 }
+
+.collab-link:hover {
+  color: var(--primary-color) !important;
+  text-decoration: underline !important;
+}
