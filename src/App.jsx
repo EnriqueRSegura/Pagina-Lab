@@ -7,6 +7,7 @@ import Biography from './components/Biography';
 import Publications from './components/Publications';
 import CurriculumExtras from './components/CurriculumExtras';
 import Collaborators from './components/Collaborators';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Publications />
         <CurriculumExtras />
         <Collaborators />
+        <Contact />
         <footer style={{ textAlign: 'center', padding: '3rem 2rem', backgroundColor: 'var(--card-bg)', marginTop: '5rem', borderTop: '1px solid var(--border-color)', fontSize: '0.9rem', opacity: 0.8 }}>
           <p>&copy; {new Date().getFullYear()} Trujillo Lab. Todos los derechos reservados.</p>
         </footer>

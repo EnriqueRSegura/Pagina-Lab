@@ -39,6 +39,15 @@ const translations = {
     },
     collaborators: {
       title: "Colaboradores"
+    },
+    contact: {
+      title: "Contacto",
+      desc: "Para colaboraciones académicas, consultas de investigación o asesoría, por favor contactar vía electrónica.",
+      institutional: "Correo Institucional",
+      professional: "Correo Profesional",
+      copy: "Copiar",
+      copied: "¡Copiado!",
+      send: "Enviar"
     }
   },
   en: {
@@ -79,6 +88,15 @@ const translations = {
     },
     collaborators: {
       title: "Collaborators"
+    },
+    contact: {
+      title: "Contact",
+      desc: "For academic collaborations, research inquiries, or consulting, please contact via email.",
+      institutional: "Institutional Email",
+      professional: "Professional Email",
+      copy: "Copy",
+      copied: "Copied!",
+      send: "Send"
     }
   }
 };

@@ -25,6 +25,7 @@ const Navbar = () => {
           <a href="#publications">{t('navbar', 'publications')}</a>
           <a href="#extras">{t('navbar', 'extras')}</a>
           <a href="#collaborators">{t('navbar', 'collaborators')}</a>
+          <a href="#contact">{t('hero', 'contact')}</a>
         </div>
         <div className="navbar-controls">
           <a href="https://trujillo-lab-inventario.onrender.com/" target="_blank" rel="noopener noreferrer" className="inventory-btn" title="Ir al Inventario del Laboratorio">
