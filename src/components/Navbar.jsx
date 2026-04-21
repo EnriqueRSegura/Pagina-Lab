@@ -27,7 +27,7 @@ const Navbar = () => {
           <a href="#collaborators">{t('navbar', 'collaborators')}</a>
         </div>
         <div className="navbar-controls">
-          <a href="https://trujillo-lab.onrender.com" target="_blank" rel="noopener noreferrer" className="inventory-btn" title="Ir al Inventario del Laboratorio">
+          <a href="https://trujillo-lab-inventario.onrender.com/" target="_blank" rel="noopener noreferrer" className="inventory-btn" title="Ir al Inventario del Laboratorio">
             🧪 {t('navbar', 'inventory')}
           </a>
           <button className="control-btn" onClick={toggleLanguage}>
