@@ -594,11 +594,11 @@ const CurriculumExtras = () => {
           <ul className="extra-list">
             
           {language === 'es' ? (
-            theses.map((t, idx) => (
+            [...theses].sort((a, b) => parseInt(b.year) - parseInt(a.year)).map((t, idx) => (
               <li key={idx}><strong>{t.level}</strong> ({t.year}) - {t.name}<br/><span style={{fontSize: '0.85em', color: 'var(--text-color)', opacity: 0.8}}>{t.title}</span></li>
             ))
           ) : (
-            theses.map((t, idx) => {
+            [...theses].sort((a, b) => parseInt(b.year) - parseInt(a.year)).map((t, idx) => {
               const levelEn = t.level === 'DOCTORADO' ? 'Doctoral' : t.level === 'MAESTRÍA' ? "Master's" : "Bachelor's";
               return (
                 <li key={idx}><strong>{levelEn} Thesis</strong> ({t.year}) - {t.name}<br/><span style={{fontSize: '0.85em', color: 'var(--text-color)', opacity: 0.8}}>{t.title}</span></li>
