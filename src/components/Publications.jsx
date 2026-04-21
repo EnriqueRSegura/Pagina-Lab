@@ -96,7 +96,7 @@ const Publications = () => {
       </div>
 
       <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-        <a href="https://scholar.google.com/citations?user=X68j43cAAAAJ&hl=es" target="_blank" rel="noopener noreferrer" className="button primary-button">
+        <a href="https://scholar.google.com/citations?user=nfd-R3UAAAAJ&hl=es" target="_blank" rel="noopener noreferrer" className="button primary-button">
           {t('publications', 'button')}
         </a>
       </div>
